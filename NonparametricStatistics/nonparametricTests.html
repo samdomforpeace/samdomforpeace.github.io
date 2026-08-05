@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141361439-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-141361439-1');
+        </script>
+
+        <script data-ad-client="ca-pub-9463984700780669" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  
+
+        <meta name="google-site-verification" content="dWWImG59lcpKRGrhVSEW_j8U2jW1vMTG1_J2dUBrF4s" />
+        <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB" />
+        <title>Nonparametric Hypothesis Tests</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="The author, Samuel Chukwuemeka aka Samdom For Peace gives all credit to Our LORD, JESUS CHRIST. We are experts in nonparametric tests calculators." />
+        <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, math, mathematics, statistics, critical value, confidence level, confidence interval, 
+              significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, type I error, type II error,
+              null hypothesis, alternative hypothesis, one-tail, two-tail, probability value p-value, test statistic, critical region, hypothesis testing,
+              population proportion, population mean, one sample proportion, two sample proportion, goodness-of-fit test, chi-square, normal distribution table,
+              student t distribution table,F statistic, test statistic, nonparameric statistics, nonparametric tests"/>      
+        <link href="styles/nonparametricStatistics.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-padding w3-card">
+                <a href="https://www.samdomforpeace.com/" class="w3-bar-item w3-button"><b>Home</b></a>
+                <!-- Float links to the right. Hide them on small screens -->
+                <div class="w3-right w3-hide-small">
+                    <a href="#quotes" class="w3-bar-item w3-button">Quotes</a>
+                    <a href="#welcome" class="w3-bar-item w3-button">Welcome</a>
+                    <a href="#nonparametricTests" class="w3-bar-item w3-button">Nonparametric Tests</a>
+                    <a href="https://www.samuelchukwuemeka.com/#statistics" target="_blank" class="w3-bar-item w3-button">Notes</a>
+                    <a href="https://www.youtube.com/playlist?list=PLgu-r_ZFzO8BwEyKYl1hDfZ4ePrSH5to1&disable_polymer=true" target="_blank" class="w3-bar-item w3-button">Videos</a>
+                    <a href="https://www.chukwuemekasamuel.com/portfolios.html" target="_blank" class="w3-bar-item w3-button">Portfolio</a>
+                    <a href="https://chukwuemekasamuel.weebly.com/" target="_blank" class="w3-bar-item w3-button">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="w3-margin-top w3-padding-48 white" id="quotes"> 
+            <div class="w3-content">
+                <p class="quote" id="messages10"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p class="quote"><q>The Joy of a Teacher is the Success of his Students.</q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        </header>
+        
+
+        <!-- Page content -->
+        <div class="w3-content w3-padding" style="max-width:1564px">
+            
+            
+            <!-- Welcome -->
+            <div class="w3-container w3-padding-32" id="welcome">
+                <h3>Welcome to Nonparametric Statistics</h3>
+                <p>
+                    <a href="https://www.samuelchukwuemeka.com/" target="_blank">
+                        <img src="images/samdom4peace.jpg" alt="Samdom For Peace" title="Samuel Chukwuemeka aka Samdom For Peace" class="image"></a>
+                    <span id="greetings"></span> <br>
+                    I greet you this day, <script>document.write(Date()+".");</script> <br>  
+                    <u>First:</u> read the notes. <br>
+                    <u>Second:</u> view the videos. <br>
+                    <u>Third:</u> solve the questions/solved examples. <br>
+                    <u>Fourth:</u> check your solutions with my <b>thoroughly-explained</b> solutions. <br>
+                    <u>Fifth:</u> check your answers with my calculators. <br>
+                    I wrote the codes for the calculators using JavaScript, a client-side scripting language. Please use the latest Internet browsers. The calculators should work. 
+                    Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. You may contact me. <br>
+                    If you are my student, please do not contact me here. Contact me via the school's system. Thank you for visiting!!!
+                </p>
+                <p><strong>Samuel Dominic Chukwuemeka</strong> (Samdom For Peace) <span style="font-size: large; font-weight: bold">B.Eng., A.A.T, M.Ed., M.S</span></p>
+            </div>
+
+            <!-- Nonparametric Statistical Tests -->
+            <div class="w3-container w3-padding-32" id="nonparametricTests">
+                <h1>Nonparametric Statistical Tests</h1>
+                <hr>
+            </div>
+
+            <div class="w3-row-padding">
+                <div class="w3-col m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <p><button onclick="location.href='#signTest';" class="w3-button w3-black">Sign Test</button></p>
+                    </div>
+                </div>
+                <div class="w3-col m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <p><button onclick="document.getElementById('wilcoxonSignedRanksTest').style.display = 'block'" class="w3-button w3-black">Wilcoxon Signed-Ranks Test for Matched Pairs</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row-padding">
+                <div class="w3-col l6 m6 w3-margin-bottom">
+                    <p><button onclick="document.getElementById('wilcoxonRankSumTest').style.display = 'block'" class="w3-button w3-black">Wilcoxon Rank-Sum Test for Two Independent Samples</button></p>
+                </div>
+                <div class="w3-col m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <p><button onclick="document.getElementById('kruskalWallisTest').style.display = 'block'" class="w3-button w3-black">Kruskal-Wallis Test for Three or More Samples</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sign Test -->
+            <div class="w3-container w3-padding-64 white" id="signTest">
+                <h2>Sign Test</h2>
+                <hr>
+                
+                <!-- Claims Involving Matched Pairs -->
+                <div class="w3-row w3-padding-32" id="about">
+                    <h4>Claims Involving Matched Pairs</h4>
+                    <form id="correlationCoefficientLeft" class="w3-center">
+                        <div class="w3-col m6 w3-padding-large">
+                            <p><label for="datasetX1Left">X = </label><textarea name="datasetX1Left" id="datasetX1Left" placeholder="Type each x-value in a new line. No commas. No spaces. No period. No extra lines." required></textarea></p>
+                        </div>
+                        <div class="w3-col m6 w3-padding-large">
+                            <p><label for="datasetYLeft">Y = </label><textarea name="datasetYLeft" id="datasetYLeft" placeholder="Type each y-value in a new line. No commas. No spaces. No period. No extra lines." required></textarea></p>
+                        </div>
+                        <p>
+                            <label for="significanceLevelCorrelationLeft">The significance level is </label><input type="text" name="significanceLevelCorrelationLeft" id="significanceLevelCorrelationLeft" autocomplete="off" required> in 
+                            <select id="significanceLevelUnitCorrelationLeft" required>
+                                <option value=""></option>
+                                <option value="percent" id="percent">Percent</option>
+                                <option value="decimal" id="decimal">Decimal</option>
+                            </select>
+                        </p>
+
+                        <p><button class="answers" onclick="correlationCoefficientLeft()">Calculate</button>
+                            <input type="reset" value="Reset">
+                        </p>
+                        
+                        <p><label for="signTest1st">Sign of Difference = </label><textarea name="signTest1st" id="signTest1st" readonly></textarea></p>
+
+                        <div id="sampleSizeCorrelationLeft"></div>
+                        <div id="pearsonCorrelationCoefficientLeft"></div>
+                        <div id="degreesFreedomCorrelationLeft"></div>
+                        <div id="criticalValueCorrelationLeft"></div>
+                        <div id="testStatisticCorrelationLeft"></div>
+                        <div id="pValueCorrelationLeft"></div>
+                        <div id="decisionCriticalValueCorrelationLeft"></div>
+                        <div id="decisionPvalueCorrelationLeft"></div>
+                        <div id="conclusionCorrelationLeft"></div>                               
+                    </form>
+                </div>
+            </div>
+
+            <div class="w3-row-padding w3-grayscale">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+                    <h3>John Doe</h3>
+                    <p class="w3-opacity">CEO & Founder</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                    <h3>Jane Doe</h3>
+                    <p class="w3-opacity">Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+                    <h3>Mike Ross</h3>
+                    <p class="w3-opacity">Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+                    <h3>Dan Star</h3>
+                    <p class="w3-opacity">Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                </div>
+            </div>
+
+            
+
+            <!-- End page content -->
+        </div>
+
+                
+        <!-- Footer -->
+        <footer class="w3-center white w3-padding-32">
+            <div id="google_translate_element" class="w3-center"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-141361439-1'}, 'google_translate_element');
+                }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>
+                <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel" /></a>
+                &copy; 2019&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs
+                <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter" /></a>
+                <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"/></a>
+            </p>
+        </footer>
+        
+        <script src="scripts/messages10.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="scripts/signTest.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script type="text/javascript" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+
+    </body>
+</html>
