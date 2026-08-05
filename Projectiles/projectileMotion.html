@@ -1,290 +1,335 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141361439-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
+<head>
 
-            gtag('config', 'UA-141361439-1');
-        </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141361439-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-        <script data-ad-client="ca-pub-9463984700780669" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        gtag('config', 'UA-141361439-1');
+    </script>
 
-        <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB" />
-        <title>Projectiles</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="The author, Samuel Dominic Chukwuemeka aka Samdom4Peace gives all credit to our LORD and GOD, JESUS CHRIST. We are talented experts in projectile motion." />
-        <meta name="keywords" content="samuel, dominic, chukwuemeka, physics, projectiles, projectile motion, motion,
+    <script data-ad-client="ca-pub-9463984700780669" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB" />
+    <title>Projectiles</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="The author, Samuel Dominic Chukwuemeka aka Samdom4Peace gives all credit to our LORD and GOD, JESUS CHRIST. We are talented experts in projectile motion." />
+    <meta name="keywords" content="samuel, dominic, chukwuemeka, physics, projectiles, projectile motion, motion,
               laws of motion, velocity, speed, distance, time, vertical component, horizontal component, range, 
-              height, maximum height, range"/>
-        <link href="styles/projectiles.css" rel="stylesheet" type="text/css" media="all">
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <!-- Navbar -->
-        <div class="w3-top">
-            <div class="w3-bar red w3-card w3-left-align">
-                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Main</a>
-                <a href="#overview" class="w3-bar-item w3-button w3-padding-large">Overview</a>
-                <a href="https://www.youtube.com/playlist?list=PLgu-r_ZFzO8DtqqDmASfrnwqhdsVgopjc&disable_polymer=true" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Videos</a>
-                <a href="#case1" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Case 1</a>
-                <a href="#case2" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Case 2</a>
-                <a href="#case3" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Case 3</a>
-                <a href="#solvedExamples" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Solved Examples</a>
-                <a href="https://www.chukwuemekasamuel.com/portfolios.html" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Portfolio</a>
-                <a href="https://chukwuemekasamuel.weebly.com/" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
-                <a href="https://samdomforpeace.appspot.com" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
-            </div>
+              height, maximum height, range" />
+    <link href="styles/projectiles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-            <!-- Navbar on small screens -->
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-                <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
-            </div>
+<body>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar red w3-card w3-left-align">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Main</a>
+            <a href="#overview" class="w3-bar-item w3-button w3-padding-large">Overview</a>
+            <a href="https://www.youtube.com/playlist?list=PLgu-r_ZFzO8DtqqDmASfrnwqhdsVgopjc&disable_polymer=true"
+                target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Videos</a>
+            <a href="#case1" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Case 1</a>
+            <a href="#case2" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Case 2</a>
+            <a href="#case3" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Case 3</a>
+            <a href="#solvedExamples" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Solved Examples</a>
+            <a href="https://www.chukwuemekasamuel.com/portfolio.html" target="_blank"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Portfolio</a>
+            <a href="https://chukwuemekasamuel.weebly.com/" target="_blank"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+            <a href="https://samdomforpeace.appspot.com"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
         </div>
-        <!-- End Navbar -->
 
-        
-        <!-- Header -->
-        <header class="w3-container" style="padding:40px 0">
-            <div class="w3-padding-32 w3-content w3-padding">
-                <p>
-                    <q>
-                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
-                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
-                        It is the <b>most powerful prayer</b>.
-                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
-                    </q> - Samuel Dominic Chukwuemeka 
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+
+    <!-- Header -->
+    <header class="w3-container" style="padding:40px 0">
+        <div class="w3-padding-32 w3-content w3-padding">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our
+                        FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p id="messages"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The Joy of the Teacher is the Success of the Students.</q> - Samuel Dominic Chukwuemeka</p>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Greeting -->
+    <div class="w3-row-padding w3-padding-64 w3-container cornsilk">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Projectiles</h1>
+                <p><span id="greetings"></span> <br>
+                    I greet you this day,
+                    <script>document.write(Date() + ".");</script> <br>
+                    <u>First:</u> read the notes. <br>
+                    <u>Second:</u> view the videos. <br>
+                    <u>Third:</u> solve the questions/solved examples. <br>
+                    <u>Fourth:</u> check your solutions with my <b>thoroughly-explained</b> examples. <br>
+                    <u>Fifth:</u> check your answers with the calculators as applicable. <br>
+                    I wrote the codes for the calculators using JavaScript, a client-side scripting language. <br>
+                    Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. You may
+                    contact me. <br>
+                    If you are my student, please do not contact me here. Contact me via the school's system. <br>
+                    Thank you for visiting!!!
                 </p>
-                <p id="messages"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p> 
-                <p><q>The Joy of a Teacher is the Success of his Students.</q> - Samuel Dominic Chukwuemeka</p>
-            </div>
-        </header>
-        <!-- End Header -->
-
-        <!-- Greeting -->
-        <div class="w3-row-padding w3-padding-64 w3-container cornsilk">
-            <div class="w3-content">
-                <div class="w3-twothird">
-                    <h1>Projectiles</h1>
-                    <p><span id="greetings"></span> <br>
-                        I greet you this day, <script>document.write(Date() + ".");</script> <br>  
-                        <u>First:</u> read the notes. <br>
-                        <u>Second:</u> view the videos. <br>
-                        <u>Third:</u> solve the questions/solved examples. <br> 
-                        <u>Fourth:</u> check your solutions with my <b>thoroughly-explained</b> examples. <br>
-                        <u>Fifth:</u> check your answers with the calculators as applicable. <br>
-                        I wrote the codes for the calculators using JavaScript, a client-side scripting language. <br>
-                        Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. You may contact me. <br>
-                        If you are my student, please do not contact me here. Contact me via the school's system. <br>
-                        Thank you for visiting!!!
-                    </p>
-                    <p><strong>Samuel Dominic Chukwuemeka</strong> (Samdom For Peace) 
-                        <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span>
-                    </p>
-                </div>
-                <div class="w3-third w3-center">
-                    <p>
-                        <a href="https://www.samuelchukwuemeka.com/" target="_blank">
-                            <img src="images/samuelchukwuemeka.jpg" alt="Samdom For Peace" title="Samuel Chukwuemeka aka Samdom For Peace" class="image">
-                        </a>
-                    </p>
-                </div>
-            </div>           
-        </div>
-        <!-- End Greeting -->
-        <hr>
-        <!-- Overview -->
-        <!-- Objectives -->
-        <div class="w3-row-padding w3-padding-64 w3-container cornsilk" id="overview">
-            <div class="w3-content">
-                <h2>Objectives</h2>
-                <p>
-                    Students will: <br><br>
-                    (1.) Discuss projectiles. <br>
-                    (2.) Discuss each case of a projectile motion. <br>
-                    (3.) Derive the formulas for several parameters for each case of a projectile motion. <br>
-                    (4.) Solve applied problems on projectiles.
+                <p><strong>Samuel Dominic Chukwuemeka</strong> (Samdom For Peace)
+                    <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span>
                 </p>
-            </div>           
-        </div>
-        <!-- End Objectives -->
-        <hr>
-        <!-- Symbols -->
-        <div class="w3-row-padding w3-padding-64 w3-container cornsilk">
-            <div class="w3-content">
-                <ul class="w3-ul white">
-                    <li class="red w3-hover-black w3-xlarge w3-center"><h2>Symbols and Meanings</h2></li>
-                    <li class="w3-padding-16 w3-center">To solve for a specified variable for each formula, please review <a href="https://expressions-equations.appspot.com/literalEquations.html" target="_blank" class="w3-bar-item w3-button w3-hover-black">Solved Examples - Literal Equations</a></li>
-                    <li class="w3-padding-16 w3-center">$U$ = initial velocity</li>
-                    <li class="w3-padding-16 w3-center">$U_x$ = horizontal component of the initial velocity</li>
-                    <li class="w3-padding-16 w3-center">$U_y$ = vertical component of the initial velocity</li>
-                    <li class="w3-padding-16 w3-center">$V$ = final velocity</li>
-                    <li class="w3-padding-16 w3-center">$\theta$ = angle of projection with the horizontal</li>
-                    <li class="w3-padding-16 w3-center">$a$ = acceleration</li>
-                    <li class="w3-padding-16 w3-center">$g$ = acceleration due to gravity</li>
-                    <li class="w3-padding-16 w3-center">$t$ = time of the motion of the projectile</li>
-                    <li class="w3-padding-16 w3-center">$h$ = height of the projectile at time, $t$</li>
-                    <li class="w3-padding-16 w3-center">$T$ = time of flight of the projectile</li>
-                    <li class="w3-padding-16 w3-center">$H$ = maximum height</li>
-                    <li class="w3-padding-16 w3-center">$t_H$ = time to reach the maximum height</li>
-                    <li class="w3-padding-16 w3-center">$R$ = range</li>
-                    <li class="w3-padding-16 w3-center">$R_{max}$ = maximum range</li>
-                    <li class="w3-padding-16 w3-center">$\phi$ = angle of elevation/depression</li>
-                    <li class="w3-padding-16 w3-center">$h_{below}$ = height below the horizontal</li>
-                    <li></li>
-                </ul>
             </div>
-        </div>
-        <!-- End Symbols -->        
-        <!-- End Overview -->
-        
-        <br><br>
-                
-        <!-- Case 1 -->
-        <div class="w3-row-padding w3-padding-64 w3-container" id="case1">
-            <div class="w3-content">
-                <h2>Case 1</h2>
-                
-                
-                <h3>Calculators for Case 1</h3>
+            <div class="w3-third w3-center">
                 <p>
-                    <mark>NOTE:</mark> Only the S.I (System International) units are used. <br>
-                    To convert to any other unit(s), please review <a href="https://measurementsandunits.appspot.com" target="_blank" class="w3-bar-item w3-button w3-hover-black">Measurements and Units</a>
+                    <a href="https://www.samuelchukwuemeka.com/" target="_blank">
+                        <img src="images/samuelchukwuemeka.jpg" alt="Samdom For Peace"
+                            title="Samuel Chukwuemeka aka Samdom For Peace" class="image">
+                    </a>
                 </p>
-                <div class="w3-row-padding">
-                    <!-- Calculators for Case 1 -->
-                    <div class="w3-half">
-                        <ul class="w3-ul w3-card w3-hover-shadow">
-                            <li class="olive w3-xlarge w3-padding-32"><u>Given:</u> initial velocity, angle of projection with the horizontal, acceleration due to gravity <br>
-                                <u>To Find:</u> other details
-                            </li>
-                        </ul>
-                        <form id="projectileCase1first" class="borderOlive white w3-padding">
-                            <p class="marginForm"><label for="initialVelocityCase1first">$U$ = </label><input type="text" name="initialVelocityCase1first" id="initialVelocityCase1first" autocomplete="off" required> $m/s$</p>
-                            <p class="marginForm"><label for="angleCase1first">$\theta$ (horizontal) = </label><input type="text" name="angleCase1first" id="angleCase1first" autocomplete="off" required> $^o$</p>
-                            <p class="marginForm"><label for="accelerationGravityCase1first">$g$ = </label><input type="text" name="accelerationGravityCase1first" id="accelerationGravityCase1first" autocomplete="off" required> $m/s^2$</p>
-                            <p class="w3-center">
-                                <button onclick="projectileCase1first()">Calculate</button>
-                                <input type="reset" value="Reset">
-                            </p>
-                            <div id="horizontalComponentVelocityCase1first"></div><br>
-                            <div id="verticalComponentVelocityCase1first"></div><br>
-                            <div id="timeMaximumHeightCase1first"></div><br>
-                            <div id="maximumHeightCase1first"></div><br>
-                            <div id="timeFlightCase1first"></div><br>
-                            <div id="rangeCase1first"></div><br>
-                            <div id="maximumRangeCase1first"></div>
-                        </form>
-                    </div>
-                    
-                    <div class="w3-half">
-                        <ul class="w3-ul w3-card w3-hover-shadow">
-                            <li class="green w3-xlarge w3-padding-32"><u>Given:</u> first term, last term, number of terms <br>
-                                <u>To Find:</u> other details
-                            </li>
-                        </ul>
-                        <form id="arithmeticSequence2nd" class="borderGreen white w3-padding">
-                            
-                        </form>
-                    </div>
-                </div>
-                <!-- End Calculators for Case 1 -->
-                
-                
-                
             </div>
         </div>
-        <!-- End Case 1 -->
-
-        <br><br><br><br>        
-        
-        
-        <!-- Case 3 -->
-        <div class="w3-row-padding w3-padding-64 w3-container" id="case3">
-            <div class="w3-content">
-                <h2>Case 3</h2>
-                
-                
-                <h3>Calculators for Case 3</h3>
-                <p>
-                    <mark>NOTE:</mark> Only the S.I (System International) units are used. <br>
-                    To convert to any other unit(s), please review <a href="https://measurementsandunits.appspot.com" target="_blank" class="w3-bar-item w3-button w3-hover-black">Measurements and Units</a>
-                </p>
-                <div class="w3-row-padding">
-                    <!-- Calculators for Case 3 -->
-                    <div class="w3-half">
-                        <ul class="w3-ul w3-card w3-hover-shadow">
-                            <li class="olive w3-xlarge w3-padding-32"><u>Given:</u> initial velocity, angle of projection with the horizontal, height below the horizontal, acceleration due to gravity <br>
-                                <u>To Find:</u> other details
-                            </li>
-                        </ul>
-                        <form id="projectileCase3first" class="borderOlive white w3-padding">
-                            <p class="marginForm"><label for="initialVelocityCase3first">$U$ = </label><input type="text" name="initialVelocityCase3first" id="initialVelocityCase3first" autocomplete="off" required> $m/s$</p>
-                            <p class="marginForm"><label for="angleCase3first">$\theta$ (horizontal) = </label><input type="text" name="angleCase3first" id="angleCase3first" autocomplete="off" required> $^o$</p>
-                            <p class="marginForm"><label for="heightBelowCase3first">$h_{below}$ = </label><input type="text" name="heightBelowCase3first" id="heightBelowCase3first" autocomplete="off" required> $m$</p>
-                            <p class="marginForm"><label for="accelerationGravityCase3first">$g$ = </label><input type="text" name="accelerationGravityCase3first" id="accelerationGravityCase3first" autocomplete="off" required> $m/s^2$</p>
-                            <p class="w3-center">
-                                <button onclick="projectileCase3first()">Calculate</button>
-                                <input type="reset" value="Reset">
-                            </p>
-                            <div id="horizontalComponentVelocityCase3first"></div><br>
-                            <div id="verticalComponentVelocityCase3first"></div><br>
-                            <div id="timeMaximumHeightCase3first"></div><br>
-                            <div id="maximumHeightCase3first"></div><br>
-                            <div id="timeFlightCase3first"></div><br>
-                            <div id="rangeCase3first"></div><br>
-                            <div id="maximumRangeCase3first"></div>
-                        </form>
-                    </div>
-                    
-                    
-                </div>
-                <!-- End Calculators for Case 3 -->
-                
-                
-                
-            </div>
+    </div>
+    <!-- End Greeting -->
+    <hr>
+    <!-- Overview -->
+    <!-- Objectives -->
+    <div class="w3-row-padding w3-padding-64 w3-container cornsilk" id="overview">
+        <div class="w3-content">
+            <h2>Objectives</h2>
+            <p>
+                Students will: <br><br>
+                (1.) Discuss projectiles. <br>
+                (2.) Discuss each case of a projectile motion. <br>
+                (3.) Derive the formulas for several parameters for each case of a projectile motion. <br>
+                (4.) Solve applied problems on projectiles.
+            </p>
         </div>
-        <!-- End Case 3 -->
+    </div>
+    <!-- End Objectives -->
+    <hr>
+    <!-- Symbols -->
+    <div class="w3-row-padding w3-padding-64 w3-container cornsilk">
+        <div class="w3-content">
+            <ul class="w3-ul white">
+                <li class="red w3-hover-black w3-xlarge w3-center">
+                    <h2>Symbols and Meanings</h2>
+                </li>
+                <li class="w3-padding-16 w3-center">To solve for a specified variable for each formula, please review <a
+                        href="https://expressions-equations.appspot.com/literalEquations.html" target="_blank"
+                        class="w3-bar-item w3-button w3-hover-black">Solved Examples - Literal Equations</a></li>
+                <li class="w3-padding-16 w3-center">$U$ = initial velocity</li>
+                <li class="w3-padding-16 w3-center">$U_x$ = horizontal component of the initial velocity</li>
+                <li class="w3-padding-16 w3-center">$U_y$ = vertical component of the initial velocity</li>
+                <li class="w3-padding-16 w3-center">$V$ = final velocity</li>
+                <li class="w3-padding-16 w3-center">$\theta$ = angle of projection with the horizontal</li>
+                <li class="w3-padding-16 w3-center">$a$ = acceleration</li>
+                <li class="w3-padding-16 w3-center">$g$ = acceleration due to gravity</li>
+                <li class="w3-padding-16 w3-center">$t$ = time of the motion of the projectile</li>
+                <li class="w3-padding-16 w3-center">$h$ = height of the projectile at time, $t$</li>
+                <li class="w3-padding-16 w3-center">$T$ = time of flight of the projectile</li>
+                <li class="w3-padding-16 w3-center">$H$ = maximum height</li>
+                <li class="w3-padding-16 w3-center">$t_H$ = time to reach the maximum height</li>
+                <li class="w3-padding-16 w3-center">$R$ = range</li>
+                <li class="w3-padding-16 w3-center">$R_{max}$ = maximum range</li>
+                <li class="w3-padding-16 w3-center">$\phi$ = angle of elevation/depression</li>
+                <li class="w3-padding-16 w3-center">$h_{below}$ = height below the horizontal</li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Symbols -->
+    <!-- End Overview -->
 
-        <br><br>
+    <br><br>
 
-        <!-- Footer -->
-        <footer class="w3-center red w3-padding-48">
-            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel" /></a>
-            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter" /></a>
-            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"/></a>
-            <div id="google_translate_element"></div><script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-141361439-1'}, 'google_translate_element');
-                }
-            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <p>&copy; 2019&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>
-        </footer>
-        <!-- End Footer -->
+    <!-- Case 1 -->
+    <div class="w3-row-padding w3-padding-64 w3-container" id="case1">
+        <div class="w3-content">
+            <h2>Case 1</h2>
 
-        <script src="scripts/messages.js"></script>
-        <script src="scripts/projectiles.js"></script>
-        <script type="text/x-mathjax-config">
+
+            <h3>Calculators for Case 1</h3>
+            <p>
+                <mark>NOTE:</mark> Only the S.I (System International) units are used. <br>
+                To convert to any other unit(s), please review <a href="https://measurementsandunits.appspot.com"
+                    target="_blank" class="w3-bar-item w3-button w3-hover-black">Measurements and Units</a>
+            </p>
+            <div class="w3-row-padding">
+                <!-- Calculators for Case 1 -->
+                <div class="w3-half">
+                    <ul class="w3-ul w3-card w3-hover-shadow">
+                        <li class="olive w3-xlarge w3-padding-32"><u>Given:</u> initial velocity, angle of projection
+                            with the horizontal, acceleration due to gravity <br>
+                            <u>To Find:</u> other details
+                        </li>
+                    </ul>
+                    <form id="projectileCase1first" class="borderOlive white w3-padding">
+                        <p class="marginForm"><label for="initialVelocityCase1first">$U$ = </label><input type="text"
+                                name="initialVelocityCase1first" id="initialVelocityCase1first" autocomplete="off"
+                                required> $m/s$</p>
+                        <p class="marginForm"><label for="angleCase1first">$\theta$ (horizontal) = </label><input
+                                type="text" name="angleCase1first" id="angleCase1first" autocomplete="off" required>
+                            $^o$</p>
+                        <p class="marginForm"><label for="accelerationGravityCase1first">$g$ = </label><input
+                                type="text" name="accelerationGravityCase1first" id="accelerationGravityCase1first"
+                                autocomplete="off" required> $m/s^2$</p>
+                        <p class="w3-center">
+                            <button onclick="projectileCase1first()">Calculate</button>
+                            <input type="reset" value="Reset">
+                        </p>
+                        <div id="horizontalComponentVelocityCase1first"></div><br>
+                        <div id="verticalComponentVelocityCase1first"></div><br>
+                        <div id="timeMaximumHeightCase1first"></div><br>
+                        <div id="maximumHeightCase1first"></div><br>
+                        <div id="timeFlightCase1first"></div><br>
+                        <div id="rangeCase1first"></div><br>
+                        <div id="maximumRangeCase1first"></div>
+                    </form>
+                </div>
+
+                <div class="w3-half">
+                    <ul class="w3-ul w3-card w3-hover-shadow">
+                        <li class="green w3-xlarge w3-padding-32"><u>Given:</u> first term, last term, number of terms
+                            <br>
+                            <u>To Find:</u> other details
+                        </li>
+                    </ul>
+                    <form id="arithmeticSequence2nd" class="borderGreen white w3-padding">
+
+                    </form>
+                </div>
+            </div>
+            <!-- End Calculators for Case 1 -->
+
+
+
+        </div>
+    </div>
+    <!-- End Case 1 -->
+
+    <br><br><br><br>
+
+
+    <!-- Case 3 -->
+    <div class="w3-row-padding w3-padding-64 w3-container" id="case3">
+        <div class="w3-content">
+            <h2>Case 3</h2>
+
+
+            <h3>Calculators for Case 3</h3>
+            <p>
+                <mark>NOTE:</mark> Only the S.I (System International) units are used. <br>
+                To convert to any other unit(s), please review <a href="https://measurementsandunits.appspot.com"
+                    target="_blank" class="w3-bar-item w3-button w3-hover-black">Measurements and Units</a>
+            </p>
+            <div class="w3-row-padding">
+                <!-- Calculators for Case 3 -->
+                <div class="w3-half">
+                    <ul class="w3-ul w3-card w3-hover-shadow">
+                        <li class="olive w3-xlarge w3-padding-32"><u>Given:</u> initial velocity, angle of projection
+                            with the horizontal, height below the horizontal, acceleration due to gravity <br>
+                            <u>To Find:</u> other details
+                        </li>
+                    </ul>
+                    <form id="projectileCase3first" class="borderOlive white w3-padding">
+                        <p class="marginForm"><label for="initialVelocityCase3first">$U$ = </label><input type="text"
+                                name="initialVelocityCase3first" id="initialVelocityCase3first" autocomplete="off"
+                                required> $m/s$</p>
+                        <p class="marginForm"><label for="angleCase3first">$\theta$ (horizontal) = </label><input
+                                type="text" name="angleCase3first" id="angleCase3first" autocomplete="off" required>
+                            $^o$</p>
+                        <p class="marginForm"><label for="heightBelowCase3first">$h_{below}$ = </label><input
+                                type="text" name="heightBelowCase3first" id="heightBelowCase3first" autocomplete="off"
+                                required> $m$</p>
+                        <p class="marginForm"><label for="accelerationGravityCase3first">$g$ = </label><input
+                                type="text" name="accelerationGravityCase3first" id="accelerationGravityCase3first"
+                                autocomplete="off" required> $m/s^2$</p>
+                        <p class="w3-center">
+                            <button onclick="projectileCase3first()">Calculate</button>
+                            <input type="reset" value="Reset">
+                        </p>
+                        <div id="horizontalComponentVelocityCase3first"></div><br>
+                        <div id="verticalComponentVelocityCase3first"></div><br>
+                        <div id="timeMaximumHeightCase3first"></div><br>
+                        <div id="maximumHeightCase3first"></div><br>
+                        <div id="timeFlightCase3first"></div><br>
+                        <div id="rangeCase3first"></div><br>
+                        <div id="maximumRangeCase3first"></div>
+                    </form>
+                </div>
+
+
+            </div>
+            <!-- End Calculators for Case 3 -->
+
+
+
+        </div>
+    </div>
+    <!-- End Case 3 -->
+
+    <br><br>
+
+    <!-- Footer -->
+    <footer class="w3-center red w3-padding-48">
+        <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel"
+            target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel" /></a>
+        <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img
+                src="images/twitter.png" alt="Follow me on twitter" /></a>
+        <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog"
+            target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog" /></a>
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-141361439-1' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2019&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.
+        </p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages.js"></script>
+    <script src="scripts/projectiles.js"></script>
+    <script type="text/x-mathjax-config">
             MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
         </script>
-        <script type="text/javascript" async
-                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
 
-    </body>
+</body>
+
 </html>
