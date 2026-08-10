@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141361439-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-141361439-1');
+    </script>
+
+    <script data-ad-client="ca-pub-9463984700780669" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+
+    <meta name="google-site-verification" content="1yHIX_e0msIoLM7X37SmQV0CzSmDRvgYASeT-gAQJe4">
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <title>Sorting Techniques and Algorithms</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in sorting techniques, pseudocodes, and algorithms.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samdom for peace, samuel dominic chukwuemeka, data structures, 
+                                      sorting techniques, sorting methods, pseudocodes, algorithms, bubble sort, insertion sort,
+                                      selection sort, binary insertion sort, merge sort, quick sort, tournament sort, list, array,
+                                      ascending order, descending order, least, greatest, counting sort, bucket sort, column sort,
+                                      heap sort, comparison sort, array size, array length">
+
+    <link href="styles/sorting.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+
+<body>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bisque w3-collapse w3-top w3-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:25px">Close Menu</a>
+        <div class="w3-container">
+            <a href="https://www.samuelchukwuemeka.com" target="_blank">
+                <img src="images/samuelchukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka"
+                    title="Samuel Dominic Chukwuemeka" class="imageSidebar">
+            </a>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="#quotes" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Quotes</a>
+            <a href="#overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a>
+            <a href="#bubbleSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bubble Sort</a>
+            <a href="#insertionSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Insertion
+                Sort</a>
+            <a href="#selectionSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Selection
+                Sort</a>
+            <a href="#mergeSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Merge Sort</a>
+            <a href="#countingSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Counting Sort</a>
+            <a href="#bucketSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bucket Sort</a>
+            <a href="#columnSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Column Sort</a>
+            <a href="#heapSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Heap Sort</a>
+            <a href="#comparisonSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Comparison
+                Sort</a>
+            <a href="#binaryInsertionSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Binary
+                Insertion Sort</a>
+            <a href="#quickSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Quick Sort</a>
+            <a href="#tournamentSort" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tournament
+                Sort</a>
+            <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">References</a>
+            <a href="https://www.chukwuemekasamuel.com/portfolio.html" target="_blank" onclick="w3_close()"
+                class="w3-bar-item w3-button w3-hover-white">Portfolio</a>
+            <a href="https://chukwuemekasamuel.weebly.com/" target="_blank" onclick="w3_close()"
+                class="w3-bar-item w3-button w3-hover-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+        <span>Sorting Techniques and Algorithms</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Header/Home -->
+        <header class="w3-padding-64 bisque">
+            <div class="w3-center w3-padding-32" id="quotes">
+                <button class="solutions" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+            </div>
+            <div class="result w3-content w3-padding" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our
+                            FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka
+                </p>
+                <p class="quote" id="messages7"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28
+                </p>
+                <p><q>The <b>Joy</b> of the <b>Teacher</b> is the <b>Success</b> of the <b>Students.</b></q> - Samuel
+                    Dominic Chukwuemeka</p>
+            </div>
+        </header>
+
+
+
+        <div class="w3-container">
+            <h1>Sorting Techniques and Algorithms</h1>
+        </div>
+
+        <!-- Overview -->
+        <div class="w3-container" id="overview">
+            <h2>Overview</h2>
+            <p>
+
+            </p>
+
+            <h3>Vocabulary Words</h3>
+            <p>
+                sort, sorting, sorting technique, list, array, array size, array length, ascending order, least to
+                greatest,
+                descending order, greatest to least, pseudocode, algorithm, bubble sort, insertion sort, selection sort,
+                merge sort,
+                counting sort, bucket sort, heap sort, comparison sort, binary insertion sort, quick sort, tournament
+                sort
+            </p>
+
+            <h3>Objectives</h3>
+            <p>
+                Students will: <br><br>
+                (1.) Discuss several sorting techniques <br>
+                (2.) Sort arrays in ascending order using several sorting techniques <br>
+                (3.) Discuss the advantages and disadvantages of each sorting technique. <br>
+                (4.) Write programs in C++, Java, C#, Python of each sorting technique
+            </p>
+        </div>
+        <!-- End Overview -->
+
+        <!-- Bubble Sort -->
+        <div class="w3-container" id="bubbleSort">
+            <h3>Bubble Sort</h3>
+            <p>
+                The <b>Bubble sort</b> is the <b>sorting technique</b> that <b>sorts an array</b> in <b>ascending
+                    order</b> using this algorithm: <br>
+                (1.) Compare the first element with the second element <br>
+                (2.) If the first element is greater than the second element, interchange the elements
+                (move the first element to the second position, and the second element to the first position) <br>
+                (3.) If the first element is less than or equal to the second element, leave 'as is'. <br>
+                (4.) Compare the second element with the third element <br>
+                (5.) If the second element is greater than the third element, interchange the elements
+                (move the second element to the third position, and the third element to the second position) <br>
+                (6.) If the second element is less than or equal to the third element, leave 'as is'. <br>
+                (7.) Compare the third element with the fourth element <br>
+                ...and continue that way until the array is sorted.
+            </p>
+            <p>
+                <b>Example 1:</b> <br>
+                Sort the array: $9, 5, 7, 3, 8$ using <b>Bubble Sort</b>
+                <br><br>
+                $Array:\:\: \begin{array} {|r|r|}\hline 9 & 5 & 7 & 3 & 8 \\ \hline \end{array} \\[3ex]$
+            </p>
+
+            <table class="w3-center">
+                <tr>
+                    <th class="green">Round</th>
+                    <th class="green">Step</th>
+                    <th class="green">Result of Step</th>
+                    <th class="green">Result of Round</th>
+                </tr>
+                <tr>
+                    <td>$1:$</td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{9} & \color{red}{5} & 7 & 3 & 8 \\ \hline \end{array}$
+                        <br>
+                        Compare $9$ and $5$ <br>
+                        $5 \lt 9$ <br>
+                        Interchange
+                        <hr>
+                        2nd: <br>
+                        $\begin{array} {|r|r|}\hline 5 & \color{red}{9} & \color{red}{7} & 3 & 8 \\ \hline \end{array}$
+                        <br>
+                        Compare $9$ and $7$ <br>
+                        $7 \lt 9$ <br>
+                        Interchange
+                        <hr>
+                        3rd: <br>
+                        $\begin{array} {|r|r|}\hline 5 & 7 & \color{red}{9} & \color{red}{3} & 8 \\ \hline \end{array}$
+                        <br>
+                        Compare $9$ and $3$ <br>
+                        $3 \lt 9$ <br>
+                        Interchange
+                        <hr>
+                        4th: <br>
+                        $\begin{array} {|r|r|}\hline 5 & 7 & 3 & \color{red}{9} & \color{red}{8} \\ \hline \end{array}$
+                        <br>
+                        Compare $9$ and $8$ <br>
+                        $8 \lt 9$ <br>
+                        Interchange
+                    </td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{5} & \color{red}{9} & 7 & 3 & 8 \\ \hline \end{array}$
+                        <hr>
+                        2nd: <br>
+                        $\begin{array} {|r|r|}\hline 5 & \color{red}{7} & \color{red}{9} & 3 & 8 \\ \hline \end{array}$
+                        <hr>
+                        3rd: <br>
+                        $\begin{array} {|r|r|}\hline 5 & 7 & \color{red}{3} & \color{red}{9} & 8 \\ \hline \end{array}$
+                        <hr>
+                        4th: <br>
+                        $\begin{array} {|r|r|}\hline 5 & 7 & 3 & \color{red}{8} & \color{red}{9} \\ \hline \end{array}$
+                    </td>
+                    <td>
+                        $1:$ <br>
+                        $\begin{array} {|r|r|}\hline 5 & 7 & 3 & 8 & 9 \\ \hline \end{array}$
+                    </td>
+                </tr>
+                <tr>
+                    <td>$2:$</td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{5} & \color{red}{7} & 3 & 8 & 9 \\ \hline \end{array}$
+                        <br>
+                        Compare $5$ and $7$ <br>
+                        $5 \lt 7 \checkmark$
+                        <hr>
+                        2nd: <br>
+                        $\begin{array} {|r|r|}\hline 5 & \color{red}{7} & \color{red}{3} & 8 & 9 \\ \hline \end{array}$
+                        <br>
+                        Compare $7$ and $3$ <br>
+                        $3 \lt 7$ <br>
+                        Interchange
+                        <hr>
+                        3rd: <br>
+                        $\begin{array} {|r|r|}\hline 5 & 3 & \color{red}{7} & \color{red}{8} & 9 \\ \hline \end{array}$
+                        <br>
+                        Compare $7$ and $8$ <br>
+                        $7 \lt 8 \checkmark$
+                        <hr>
+                        4th: <br>
+                        $\begin{array} {|r|r|}\hline 5 & 3 & 7 & \color{red}{8} & \color{red}{9} \\ \hline \end{array}$
+                        <br>
+                        Compare $8$ and $9$ <br>
+                        $8 \lt 9 \checkmark$
+                    </td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{5} & \color{red}{7} & 3 & 8 & 9 \\ \hline \end{array}$
+                        <hr>
+                        2nd: <br>
+                        $\begin{array} {|r|r|}\hline 5 & \color{red}{3} & \color{red}{7} & 8 & 9 \\ \hline \end{array}$
+                        <hr>
+                        3rd: <br>
+                        $\begin{array} {|r|r|}\hline 5 & 3 & \color{red}{7} & \color{red}{8} & 9 \\ \hline \end{array}$
+                        <hr>
+                        4th: <br>
+                        $\begin{array} {|r|r|}\hline 5 & 3 & 7 & \color{red}{8} & \color{red}{9} \\ \hline \end{array}$
+                    </td>
+                    <td>
+                        $2:$ <br>
+                        $\begin{array} {|r|r|}\hline 5 & 3 & 7 & 8 & 9 \\ \hline \end{array}$
+                    </td>
+                </tr>
+                <tr>
+                    <td>$3:$</td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{5} & \color{red}{3} & 7 & 8 & 9 \\ \hline \end{array}$
+                        <br>
+                        Compare $5$ and $3$ <br>
+                        $3 \lt 5$ <br>
+                        Interchange
+                    </td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{3} & \color{red}{5} & 7 & 8 & 9 \\ \hline \end{array}$
+                    </td>
+                    <td>
+                        $3:$ <br>
+                        $\begin{array} {|r|r|}\hline 3 & 5 & 7 & 8 & 9 \\ \hline \end{array}$ <br>
+                        <b>Array is sorted</b>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <i>
+                    <b>Teacher:</b> Can you imagine having to go three rounds just to sort a simple array? <br>
+                    <b>Student:</b> Yes...and several steps in each round. <br>
+                    There has got to be a better way to do this. <br>
+                    <b>Teacher:</b> Of course. We shall explore more techniques. <br>
+                    But, let us write the pseudocode for this technique.
+                </i>
+            </p>
+            <h4>Pseudocode for Bubble Sort</h4>
+            <p>
+                <b>First Method</b> <br>
+                $n$ = array size <br>
+                sortArray <b>bubbleSort</b>($a_1, ..., a_n$ where $n \ge 2$) <br>
+                <b>for</b> $i = 1$ <b>to</b> $n - 1$ <br>
+                &ensp;&ensp; <b>for</b> $j = 1$ <b>to</b> $n - i$ <br>
+                &emsp;&emsp;&ensp; <b>if</b> $a_j \gt a_{j + 1}$ <b>then</b> interchange $a_j$ and $a_{j + 1}$ <br><br>
+
+                <b>Second Method</b> <br>
+                $n$ = array size <br>
+                sortArray <b>bubbleSort</b>($a_1, ..., a_n$ where $n \ge 2$) <br>
+                <b>for</b> $i = 1$ <b>to</b> $n - 1$ <br>
+                &ensp;&ensp; <b>for</b> $j = n$ <b>to</b> $i + 1$ <br>
+                &emsp;&emsp;&ensp; <b>if</b> $a_j \lt a_{j - 1}$ <b>then</b> interchange $a_j$ and $a_{j - 1}$
+            </p>
+        </div>
+        <!-- End Bubble Sort -->
+
+
+        <!-- Insertion Sort -->
+        <div class="w3-container" id="insertionSort">
+            <h3>Insertion Sort</h3>
+            <p>
+                The <b>Insertion sort</b> is the <b>sorting technique</b> that <b>sorts an array</b> in <b>ascending
+                    order</b> using this algorithm: <br>
+                (1.) Compare the second element with the first element <br>
+                (2.) If the second element is less than the first element, interchange the elements
+                (move the second element to the first position, and the first element to the second position) <br>
+                (3.) If the second element is greater than or equal to the first element, leave 'as is'. <br>
+                (4.) Compare the third element with the first element <br>
+                (5.) If the third element is less than the first element, move the third element to the first position
+                <br>
+                (6.) If the third element is greater than the first element, compare the third element with the second
+                element. <br>
+                (7.) If the third element is less than the second element, interchange the elements <br>
+                (move the third element to the second position, and the second element to the third position) <br>
+                (8.) If the third element is greater than the second element, leave 'as is' <br>
+                ...and continue that way until the array is sorted.
+            </p>
+            <p>
+                <b>Example $1$:</b> <br>
+                Sort the array: $9, 5, 7, 3, 8$ using <b>Insertion Sort</b>
+            </p>
+            <p>
+                $Array:\:\: \begin{array} {|r|r|}\hline 9 & 5 & 7 & 3 & 8 \\ \hline \end{array} \\[3ex]$
+            </p>
+            <table class="w3-center">
+                <tr>
+                    <th class="green">Round</th>
+                    <th class="green">Step</th>
+                    <th class="green">Result of Step</th>
+                    <th class="green">Result of Round</th>
+                </tr>
+                <tr>
+                    <td>$1:$</td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{9} & \color{red}{5} & 7 & 3 & 8 \\ \hline \end{array}$
+                        <br>
+                        Compare $5$ and $9$ <br>
+                        $5 \lt 9$ <br>
+                        Interchange
+                    </td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{5} & \color{red}{9} & 7 & 3 & 8 \\ \hline \end{array}$
+                    </td>
+                    <td>
+                        1: <br>
+                        $\begin{array} {|r|r|}\hline 5 & 9 & 7 & 3 & 8 \\ \hline \end{array}$
+                    </td>
+                </tr>
+                <tr>
+                    <td>$2:$</td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{5} & 9 & \color{red}{7} & 3 & 8 \\ \hline \end{array}$
+                        <br>
+                        Compare $7$ and $5$ <br>
+                        $7 \gt 5 \checkmark$
+                        <hr>
+                        2nd: <br>
+                        $\begin{array} {|r|r|}\hline 5 & \color{red}{9} & \color{red}{7} & 3 & 8 \\ \hline \end{array}$
+                        <br>
+                        Compare $7$ and $9$ <br>
+                        $7 \lt 9$ <br>
+                        Interchange
+                    </td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{5} & 9 & \color{red}{7} & 3 & 8 \\ \hline \end{array}$
+                        <hr>
+                        2nd: <br>
+                        $\begin{array} {|r|r|}\hline 5 & \color{red}{7} & \color{red}{9} & 3 & 8 \\ \hline \end{array}$
+                    </td>
+                    <td>
+                        2: <br>
+                        $\begin{array} {|r|r|}\hline 5 & 7 & 9 & 3 & 8 \\ \hline \end{array}$
+                    </td>
+                </tr>
+                <tr>
+                    <td>$3:$</td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{5} & 7 & 9 & \color{red}{3} & 8 \\ \hline \end{array}$
+                        <br>
+                        Compare $3$ and $5$ <br>
+                        $3 \lt 5$ <br>
+                        Move $3$ to the first position
+                    </td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{3} & \color{red}{5} & 7 & 9 & 8 \\ \hline \end{array}$
+                    </td>
+                    <td>
+                        3: <br>
+                        $\begin{array} {|r|r|}\hline 3 & 5 & 7 & 9 & 8 \\ \hline \end{array}$
+                    </td>
+                </tr>
+                <tr>
+                    <td>$4:$</td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{3} & 5 & 7 & 9 & \color{red}{8} \\ \hline \end{array}$
+                        <br>
+                        Compare $8$ and $3$ <br>
+                        $8 \gt 3 \checkmark$
+                        <hr>
+                        2nd: <br>
+                        $\begin{array} {|r|r|}\hline 3 & \color{red}{5} & 7 & 9 & \color{red}{8} \\ \hline \end{array}$
+                        <br>
+                        Compare $8$ and $5$ <br>
+                        $8 \gt 5 \checkmark$
+                        <hr>
+                        3rd: <br>
+                        $\begin{array} {|r|r|}\hline 3 & 5 & \color{red}{7} & 9 & \color{red}{8} \\ \hline \end{array}$
+                        <br>
+                        Compare $8$ and $7$ <br>
+                        $8 \gt 7 \checkmark$
+                        <hr>
+                        4th: <br>
+                        $\begin{array} {|r|r|}\hline 3 & 5 & 7 & \color{red}{9} & \color{red}{8} \\ \hline \end{array}$
+                        <br>
+                        Compare $8$ and $9$ <br>
+                        $8 \lt 9$ <br>
+                        Interchange
+                    </td>
+                    <td>
+                        1st: <br>
+                        $\begin{array} {|r|r|}\hline \color{red}{3} & 5 & 7 & 9 & \color{red}{8} \\ \hline \end{array}$
+                        <hr>
+                        2nd: <br>
+                        $\begin{array} {|r|r|}\hline 3 & \color{red}{5} & 7 & 9 & \color{red}{8} \\ \hline \end{array}$
+                        <hr>
+                        3rd: <br>
+                        $\begin{array} {|r|r|}\hline 3 & 5 & \color{red}{7} & 9 & \color{red}{8} \\ \hline \end{array}$
+                        <hr>
+                        4th: <br>
+                        $\begin{array} {|r|r|}\hline 3 & 5 & 7 & \color{red}{8} & \color{red}{9} \\ \hline \end{array}$
+                    </td>
+                    <td>
+                        4: <br>
+                        $\begin{array} {|r|r|}\hline 3 & 5 & 7 & 8 & 9 \\ \hline \end{array}$ <br>
+                        Array is sorted
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                <i>
+                    <b>Student:</b> This one seems easier than Bubble sort <br>
+                    Even though it has four rounds. <br>
+                    <b>Teacher:</b> Can you figure out your own technique? <br>
+                    A technique that will be faster? <br>
+                    Well, let's discuss more techniques
+                </i>
+            </p>
+            <h4>Pseudocode for Insertion Sort</h4>
+            <p>
+                <b>First Method</b> <br>
+                $n$ = length of array <br>
+                sortArray <b>InsertionSort</b>($a_1, ..., a_n$ where $n \ge 2$) <br>
+                <b>for</b> $j = 2$ <b>to</b> $n$ <br>
+                &ensp;&ensp; $i = 1$ <br>
+                &ensp;&ensp; <b>while</b> $a_j \gt a_i$ <br>
+                &emsp;&emsp;&ensp; $i = i + 1$ <br>
+                &ensp;&ensp; $m = a_j$ <br>
+                &ensp;&ensp; <b>for</b> $k = 0$ <b>to</b> $j - i - 1$ <br>
+                &emsp;&emsp;&ensp; $a_{j - k} = a_{j - k - 1}$ <br>
+                &ensp;&ensp; $a_i = m$ <br><br>
+
+                <b>Second Method</b> <br>
+                $n$ = length of array <br>
+                sortArray <b>InsertionSort</b>($a_1, ..., a_n$ where $n \ge 2$) <br>
+                <b>for</b> $j = 2$ <b>to</b> $n$ <br>
+                &ensp;&ensp; $key = a_j$ <br>
+                &ensp;&ensp; $i = j - 1$ <br>
+                &ensp;&ensp; <b>while</b> $i \gt 0$ and $a_i \gt key$ <br>
+                &emsp;&emsp;&ensp; $a_{i + 1} = a_i$ <br>
+                &emsp;&emsp;&ensp; $i = i - 1$ <br>
+                &ensp;&ensp; $a_{i + 1} = key$
+            </p>
+
+        </div>
+        <!-- End Insertion Sort -->
+
+
+
+
+
+        <br><br>
+
+        <div id="references" class="w3-content w3-white w3-padding-16">
+            <h2>References</h2>
+            <p>
+                Chukwuemeka, S.D (2020, July 3). <i>Samuel Chukwuemeka Tutorials - Math, Science, and Technology.</i>
+                Retrieved from <a href="https://www.samuelchukwuemeka.com/"
+                    target="_blank">https://www.samuelchukwuemeka.com</a>
+                <br><br>
+                Cormen, T. H., Charles Eric Leiserson, Rivest, R. L., Stein, C., & Al, E. (2009). Introduction to
+                algorithms. MIT Press.
+                ‌<br><br>
+                Rosen, K. H. (2019). Discrete Mathematics and Its Applications. New York, Ny Mcgraw-Hill Education.
+                <br><br>
+
+            </p>
+        </div>
+
+
+
+
+        <!-- Footer -->
+        <footer class="bisque w3-center w3-padding-24">
+            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel"
+                target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img
+                    src="images/twitter.png" alt="Follow me on twitter"></a>
+            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog"
+                target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+            <div id="google_translate_element"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-141361439-1' }, 'google_translate_element');
+                }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>&copy; 2020&nbsp;<a href="https://www.chukwuemekasamuel.com/"
+                    target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+    <script src="scripts/messages7.js"></script>
+    <script src="scripts/sorting.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>
