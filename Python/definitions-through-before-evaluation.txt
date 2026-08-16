@@ -4992,7 +4992,7 @@
                         height\:\:is\:\:in\:\:meters (m) \\[3ex]
                         $
                         If you need help with conversion of units, please review the Tables and Examples in 
-                        <a href="https://samuelchukwuemeka.github.io/Presentations/Projects/ArithmeticAlgebra/MeasurementsUnits.html" target="_blank">Measurements and Units</a> <br><br>
+                        <a href="https://scholarlycommunication.github.io/Presentations/Projects/ArithmeticAlgebra/MeasurementsUnits.html" target="_blank">Measurements and Units</a> <br><br>
                    
                         <i>
                             <b>Teacher:</b> What do you notice in both websites? <br>
